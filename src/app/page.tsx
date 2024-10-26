@@ -50,7 +50,7 @@ export default function Home() {
           <div className="flex gap-4">
             <div id="hs-basic-modal" className="bg-yellow-500 size-32 rounded-xl">
             </div>
-            <div className="bg-blue-950 rounded-full size-12 flex justify-center items-center cursor-pointer text-white hover:bg-blue-900 duration-150 " aria>
+            <div className="bg-blue-950 rounded-full size-12 flex justify-center items-center cursor-pointer text-white hover:bg-blue-900 duration-150">
 
               <GiReceiveMoney size={32} />
             </div>
