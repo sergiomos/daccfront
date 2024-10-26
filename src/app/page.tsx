@@ -1,7 +1,8 @@
 import Banner from "@/components/banner";
-import Header from "../components/header";
+import Header from "@/components/header";
 import { IoCalendarOutline } from "react-icons/io5";
 import { GiReceiveMoney } from "react-icons/gi";
+import News from "@/components/news";
 
 
 export default function Home() {
@@ -12,8 +13,7 @@ export default function Home() {
       <div className="grid grid-cols-6 my-8 px-24">
         <div className="col-span-1">
           <h3 className="bg-yellow-500 text-white m-auto font-bold uppercase rounded-full w-fit px-16 py-1">dacc news</h3>
-          <div className="bg-slate-300 m-auto size-56 my-8 font-bold flex cursor-pointer justify-center items-center">
-            Noticia 1</div>
+          <News />
         </div>
         <div className="col-span-4 px-10">
           <div className="bg-yellow-500 h-3 w-60 rounded-lg m-auto" />
@@ -32,9 +32,9 @@ export default function Home() {
             <span>Para saber mais sobre esses e outros <span className="font-bold">projetos</span> ativos no diretório <span className="text-yellow-500 font-bold cursor-pointer">clique aqui</span> </span>
 
             <div className="flex justify-center items-center gap-8">
-              <div className="bg-slate-300 size-56 my-8 font-bold cursor-pointer flex justify-center items-center">
+              <div className="bg-slate-300 size-56  font-bold cursor-pointer flex justify-center items-center">
                 Sociedade da Coruja</div>
-              <div className="bg-slate-300 size-56 my-8 font-bold cursor-pointer flex justify-center items-center">
+              <div className="bg-slate-300 size-56 font-bold cursor-pointer flex justify-center items-center">
                 Arena FEI</div>
               <div className="bg-slate-300 size-56 my-8 font-bold cursor-pointer flex justify-center items-center">
                 Dev Week</div>
@@ -47,8 +47,13 @@ export default function Home() {
             <IoCalendarOutline size={32} />
           </div>
 
-          <div className="bg-blue-950 rounded-full size-12 flex justify-center items-center cursor-pointer text-white hover:bg-blue-900 duration-150 ">
-            <GiReceiveMoney size={32} />
+          <div className="flex gap-4">
+            <div id="hs-basic-modal" className="bg-yellow-500 size-32 rounded-xl">
+            </div>
+            <div className="bg-blue-950 rounded-full size-12 flex justify-center items-center cursor-pointer text-white hover:bg-blue-900 duration-150 " aria>
+
+              <GiReceiveMoney size={32} />
+            </div>
           </div>
 
         </div>
