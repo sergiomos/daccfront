@@ -6,6 +6,16 @@ export default function Home() {
     <div>
       <Header />
       <Banner text="Informativos" />
+      <div className="grid grid-cols-6 my-8">
+        <div className="col-span-1">
+        </div>
+
+        <div className="col-span-4 px-10">
+        </div>
+
+        <div className="col-span-1">
+        </div>
+      </div>
     </div>
   )
 }
