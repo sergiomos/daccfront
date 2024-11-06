@@ -2,7 +2,7 @@ import HeaderButton from "./headerButton";
 
 export default function Header() {
   return (
-    <header className="bg-blue-950 grid grid-flow-col px-24 py-4">
+    <header className="bg-blue-950 flex justify-between px-24 py-4">
       <h1 className="text-slate-50 text-xl auto-cols-auto font-bold" >DACC</h1>
       <nav className="text-slate-50 font-medium ">
         <ul className="flex gap-4">
