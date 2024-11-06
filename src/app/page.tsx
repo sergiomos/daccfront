@@ -1,11 +1,19 @@
+"use client";
+
 import Banner from "@/components/banner";
 import Header from "@/components/header";
 import { IoCalendarOutline } from "react-icons/io5";
 import { GiReceiveMoney } from "react-icons/gi";
 import News from "@/components/news";
+import { useState } from "react";
+import Image from 'next/image'
+import QRcode from '../public/QRcode.jpg'
 
 
 export default function Home() {
+
+  const [showQRcode, setShowQRcode] = useState(false)
+
   return (
     <div>
       <Header />
@@ -46,12 +54,18 @@ export default function Home() {
           <div className="bg-blue-950 rounded-full size-12 flex justify-center items-center cursor-pointer text-white hover:bg-blue-900 duration-150 ">
             <IoCalendarOutline size={32} />
           </div>
-
+          
           <div className="flex gap-4">
-            <div id="hs-basic-modal" className="bg-yellow-500 size-32 rounded-xl">
+            <div id="hs-basic-modal" className={`bg-yellow-500 size-32 rounded-xl flex justify-center items-center cursor-pointer ${showQRcode? "" : "hidden"}`}>
+              <Image
+                src={QRcode}
+                width={115}
+                height={115}
+                alt="Picture of the author"
+              />
             </div>
-            <div className="bg-blue-950 rounded-full size-12 flex justify-center items-center cursor-pointer text-white hover:bg-blue-900 duration-150">
-
+            <div className="bg-blue-950 rounded-full size-12 flex justify-center items-center cursor-pointer text-white hover:bg-blue-900 duration-150"
+            onClick={() => setShowQRcode(!showQRcode)}>
               <GiReceiveMoney size={32} />
             </div>
           </div>
