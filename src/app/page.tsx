@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <Carrosel />
+      <Carousel />
       <div className="grid grid-cols-6 my-8 px-24">
         <div className="col-span-1">
           <h3 className="bg-yellow-500 text-white m-auto font-bold uppercase rounded-full w-fit px-16 py-1">dacc news</h3>
