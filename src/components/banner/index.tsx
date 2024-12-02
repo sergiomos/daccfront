@@ -1,5 +1,5 @@
 "use client";
-import './StyleCarrosel.css'
+import './StyleCarousel.css'
 import { register } from 'swiper/element/bundle'
 import 'swiper/css';
 import 'swiper/css/navigation';
