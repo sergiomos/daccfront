@@ -1,15 +1,14 @@
-import Banner from "@/components/banner";
 import Header from "@/components/header";
+import Carrosel from "@/components/banner";
 import { IoCalendarOutline } from "react-icons/io5";
 import { GiReceiveMoney } from "react-icons/gi";
 import News from "@/components/news";
-
 
 export default function Home() {
   return (
     <div>
       <Header />
-      <Banner text="Informativos" />
+      <Carrosel />
       <div className="grid grid-cols-6 my-8 px-24">
         <div className="col-span-1">
           <h3 className="bg-yellow-500 text-white m-auto font-bold uppercase rounded-full w-fit px-16 py-1">dacc news</h3>
