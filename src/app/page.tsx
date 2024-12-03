@@ -5,8 +5,12 @@ import Header from "@/components/header";
 import { IoCalendarOutline } from "react-icons/io5";
 import { GiReceiveMoney } from "react-icons/gi";
 import News from "@/components/news";
+
+import CalendarEvents from '@/components/calendar';
+
 import HomeSideButton from "@/components/homeSideButton";
 import QRcode from "@/components/qrcode";
+
 
 
 export default function Home() {
@@ -48,11 +52,26 @@ export default function Home() {
 
         </div>
         <div className="col-span-1 flex flex-col items-center gap-8">
-          <div className="bg-blue-950 rounded-full size-12 flex justify-center items-center cursor-pointer text-white hover:bg-blue-900 duration-150 ">
-            <IoCalendarOutline size={32} />
+          <div
+              className="bg-blue-950 rounded-full size-12 flex justify-center items-center cursor-pointer text-white hover:bg-blue-900 duration-150 ">
+            <IoCalendarOutline size={32}/>
           </div>
+
+          <CalendarEvents />
+
+          <div className="flex gap-4">
+            <div id="hs-basic-modal" className="bg-yellow-500 size-32 rounded-xl">
+            </div>
+            <div
+                className="bg-blue-950 rounded-full size-12 flex justify-center items-center cursor-pointer text-white hover:bg-blue-900 duration-150">
+
+              <GiReceiveMoney size={32}/>
+            </div>
+          </div>
+
+
           <HomeSideButton icon={<GiReceiveMoney size={32}/>} content={<QRcode/>}/>
-          
+
         </div>
       </div>
     </div>
