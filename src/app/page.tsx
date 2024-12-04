@@ -1,10 +1,14 @@
+"use client";
 import Header from "@/components/header";
 import Carrosel from "@/components/banner";
 import { IoCalendarOutline } from "react-icons/io5";
 import { GiReceiveMoney } from "react-icons/gi";
 import News from "@/components/news";
+import HomeSideButton from "@/components/homeSideButton";
+import QRcode from "@/components/qrcode";
 
 export default function Home() {
+
   return (
     <div>
       <Header />
@@ -45,16 +49,8 @@ export default function Home() {
           <div className="bg-blue-950 rounded-full size-12 flex justify-center items-center cursor-pointer text-white hover:bg-blue-900 duration-150 ">
             <IoCalendarOutline size={32} />
           </div>
-
-          <div className="flex gap-4">
-            <div id="hs-basic-modal" className="bg-yellow-500 size-32 rounded-xl">
-            </div>
-            <div className="bg-blue-950 rounded-full size-12 flex justify-center items-center cursor-pointer text-white hover:bg-blue-900 duration-150">
-
-              <GiReceiveMoney size={32} />
-            </div>
-          </div>
-
+          <HomeSideButton icon={<GiReceiveMoney size={32}/>} content={<QRcode/>}/>
+          
         </div>
       </div>
     </div>
