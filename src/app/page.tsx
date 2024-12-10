@@ -7,6 +7,7 @@ import { GiReceiveMoney } from "react-icons/gi";
 import News from "@/components/news";
 import HomeSideButton from "@/components/homeSideButton";
 import QRcode from "@/components/qrcode";
+import Projetos from "@/components/projetos";
 
 
 export default function Home() {
@@ -34,15 +35,12 @@ export default function Home() {
 
           <div className="text-center my-16 flex flex-col gap-5">
             <h4 className="font-bold text-lg">Projetos em andamento</h4>
+
             <span>Para saber mais sobre esses e outros <span className="font-bold">projetos</span> ativos no diretório <span className="text-yellow-500 font-bold cursor-pointer">clique aqui</span> </span>
 
-            <div className="flex justify-center items-center gap-8">
-              <div className="bg-slate-300 size-56  font-bold cursor-pointer flex justify-center items-center">
-                Sociedade da Coruja</div>
-              <div className="bg-slate-300 size-56 font-bold cursor-pointer flex justify-center items-center">
-                Arena FEI</div>
-              <div className="bg-slate-300 size-56 my-8 font-bold cursor-pointer flex justify-center items-center">
-                Dev Week</div>
+            {/* Substituindo a lista pelos projetos no carrossel */}
+            <div className="mt-8">
+              <Projetos />
             </div>
           </div>
 
