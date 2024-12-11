@@ -58,9 +58,9 @@ export default function Diretorias(){
         effect={'coverflow'}
         grabCursor={true}
         centeredSlides={true}
-        slidesPerView={4}
+        slidesPerView={3}
         coverflowEffect={{
-          rotate: 35,
+          rotate: 50,
           stretch: 0,
           depth: 100,
           modifier: 1,
