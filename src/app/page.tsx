@@ -8,6 +8,7 @@ import News from "@/components/news";
 import HomeSideButton from "@/components/homeSideButton";
 import QRcode from "@/components/qrcode";
 import Projetos from "@/components/projetos";
+import Footer from "@/components/footer";
 
 
 export default function Home() {
@@ -53,6 +54,7 @@ export default function Home() {
 
         </div>
       </div>
+      <Footer />
     </div>
   )
 }
