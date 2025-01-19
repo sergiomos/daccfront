@@ -37,7 +37,7 @@ export default function Carrousel() {
       title: "Loreal Ipsum3",
       text: "Lorem ipsum dolor sit amet consectetur",
       local: "#"
-    },
+    }
   ]
 
   return (

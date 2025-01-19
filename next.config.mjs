@@ -23,6 +23,13 @@ const nextConfig = {
         pathname: '/wp-content/uploads/2024/03/**',
         search: '',
       },
+      {
+        protocol: 'https',
+        hostname: '**picsum.photos',
+        port: '',
+        pathname: '/1080/350/**',
+        search: '',
+      },
     ],
   },
 };
