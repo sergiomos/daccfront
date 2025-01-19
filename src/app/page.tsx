@@ -1,6 +1,6 @@
 "use client";
 
-import Banner from "@/components/banner";
+import Banner from "@/components/carrousel";
 import Header from "@/components/header";
 import { IoCalendarOutline } from "react-icons/io5";
 import { GiReceiveMoney } from "react-icons/gi";
@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <Banner/>
+      <Banner />
       <div className="grid grid-cols-6 my-8 px-24">
         <div className="col-span-1">
           <h3 className="bg-yellow-500 text-white m-auto font-bold uppercase rounded-full w-fit px-16 py-1">dacc news</h3>
@@ -49,8 +49,8 @@ export default function Home() {
           <div className="bg-blue-950 rounded-full size-12 flex justify-center items-center cursor-pointer text-white hover:bg-blue-900 duration-150 ">
             <IoCalendarOutline size={32} />
           </div>
-          <HomeSideButton icon={<GiReceiveMoney size={32}/>} content={<QRcode/>}/>
-          
+          <HomeSideButton icon={<GiReceiveMoney size={32} />} content={<QRcode />} />
+
         </div>
       </div>
     </div>
