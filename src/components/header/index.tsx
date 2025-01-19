@@ -6,13 +6,13 @@ export default function Header() {
       <h1 className="text-slate-50 text-xl auto-cols-auto font-bold" >DACC</h1>
       <nav className="text-slate-50 font-medium ">
         <ul className="flex gap-4">
-          <HeaderButton className="text-yellow-400">Home</HeaderButton>
-          <HeaderButton>Sobre</HeaderButton>
-          <HeaderButton>Diretorias</HeaderButton>
-          <HeaderButton>Projetos</HeaderButton>
-          <HeaderButton>Noticias</HeaderButton>
-          <HeaderButton>Contato</HeaderButton>
-          <HeaderButton>Apoie o DACC</HeaderButton>
+          <HeaderButton href="/" value="">Home</HeaderButton>
+          <HeaderButton href="/sobre" value="sobre">Sobre</HeaderButton>
+          <HeaderButton href="/diretorias" value="diretorias">Diretorias</HeaderButton>
+          <HeaderButton href="/projetos" value="projetos">Projetos</HeaderButton>
+          <HeaderButton href="/noticias" value="noticias">Noticias</HeaderButton>
+          <HeaderButton href="/contato" value="contato">Contato</HeaderButton>
+          <HeaderButton href="/#" value="apoie">Apoie o DACC</HeaderButton>
         </ul>
       </nav>
     </header>
