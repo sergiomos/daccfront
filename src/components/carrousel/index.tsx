@@ -8,6 +8,7 @@ import 'swiper/css/scrollbar';
 import 'swiper/css/effect-fade';
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { EffectFade, Autoplay } from 'swiper/modules';
+import Image from 'next/image'
 
 export default function Carrousel() {
   register(); //ao utilizar elementos customizados da biblioteca, tenho q registrar eles manualmente uma vez
@@ -53,12 +54,13 @@ export default function Carrousel() {
       >
         {img.map((item) => (
           //elementos que vao estar no swiper (no caso a lista de dicionarios criada anteriormente)
-          <SwiperSlide key={item.id}>
+          <SwiperSlide key={item.id} className="slide_img">
 
             <a href={item.local}>
-              <img src={item.image}
+              <Image src={item.image}
                 alt="Imagem_Carrosel"
                 className="slide_img"
+                fill={true}
               />
             </a>
 
@@ -68,7 +70,7 @@ export default function Carrousel() {
           </SwiperSlide>
         ))}
       </Swiper>
-    </div>
+    </div >
   );
 }
 

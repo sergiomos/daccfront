@@ -17,41 +17,55 @@ import Projetos from '../../public/projetos.jpg';
 import RH from '../../public/rh.jpg';
 
 
-export default function Diretorias(){
+export default function Diretorias() {
   register(); //ao utilizar elementos customizados da biblioteca, tenho q registrar eles manualmente uma vez
 
   // lista de dicionarios para cada imagem utilizada no carrosel da noticia
   const img = [
-    {id: '1', 
-     image: Academico,
-     local: "#"},
+    {
+      id: '1',
+      image: Academico,
+      local: "#"
+    },
 
-    {id: '2', 
-     image: Comercial,
-     local: "#"},
+    {
+      id: '2',
+      image: Comercial,
+      local: "#"
+    },
 
-    {id: '3', 
-     image: Comunicacao,
-     local: "#"},
+    {
+      id: '3',
+      image: Comunicacao,
+      local: "#"
+    },
 
-    {id: '4', 
-     image: Esports,
-     local: "#"},
+    {
+      id: '4',
+      image: Esports,
+      local: "#"
+    },
 
-    {id: '5', 
-     image: Marketing,
-     local: "#"},
+    {
+      id: '5',
+      image: Marketing,
+      local: "#"
+    },
 
-    {id: '6', 
-     image: Projetos,
-     local: "#"},
+    {
+      id: '6',
+      image: Projetos,
+      local: "#"
+    },
 
-    {id: '7', 
-     image:  RH,
-     local: "#"},
+    {
+      id: '7',
+      image: RH,
+      local: "#"
+    },
   ]
 
-  return(
+  return (
     <div className='containerDiretoria'>
 
       <Swiper //onde é definido todos os parametros
@@ -67,20 +81,20 @@ export default function Diretorias(){
           slideShadows: false,
         }}
         direction={'horizontal'}
-        mousewheel = {true}
+        mousewheel={true}
         modules={[EffectCoverflow, Mousewheel]}
         loop={true}
       >
-        {img.map((item) =>( //elementos que vao estar no swiper (no caso a lista de dicionarios criada anteriormente)
-          <SwiperSlide >
+        {img.map((item) => ( //elementos que vao estar no swiper (no caso a lista de dicionarios criada anteriormente)
+          <SwiperSlide key={item.id}>
 
             <a href={item.local}>
-              <Image 
-              src = {item.image} 
-              alt="Imagem_Carrosel" 
-              className="slide_img"
-               />
-              </a>
+              <Image
+                src={item.image}
+                alt="Imagem_Carrosel"
+                className="slide_img"
+              />
+            </a>
 
           </SwiperSlide>
         ))}
