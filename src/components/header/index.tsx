@@ -8,11 +8,10 @@ export default function Header() {
         <ul className="flex gap-4">
           <HeaderButton href="/" value="">Home</HeaderButton>
           <HeaderButton href="/sobre" value="sobre">Sobre</HeaderButton>
-          <HeaderButton href="/diretorias" value="diretorias">Diretorias</HeaderButton>
-          <HeaderButton href="/projetos" value="projetos">Projetos</HeaderButton>
           <HeaderButton href="/noticias" value="noticias">Noticias</HeaderButton>
-          <HeaderButton href="/contato" value="contato">Contato</HeaderButton>
-          <HeaderButton href="/#" value="apoie">Apoie o DACC</HeaderButton>
+          <HeaderButton href="/forum" value="forum">Fórum</HeaderButton>
+          <HeaderButton href="/produtos" value="produtos">Produtos</HeaderButton>
+          <HeaderButton href="/apoie" value="apoie">Apoie o DACC</HeaderButton>
         </ul>
       </nav>
     </header>

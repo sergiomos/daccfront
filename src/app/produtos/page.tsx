@@ -3,7 +3,7 @@ import Divisor from "@/components/divisor";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 
-export default function Diretorias() {
+export default function Produtos() {
   return (
     <>
       <Header />
