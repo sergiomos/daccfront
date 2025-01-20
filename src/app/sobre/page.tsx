@@ -7,8 +7,6 @@ import Header from "@/components/header";
 import HomeSideButton from "@/components/homeSideButton";
 import QRcode from "@/components/qrcode";
 import { GiReceiveMoney } from "react-icons/gi";
-
-
 import { register } from 'swiper/element/bundle'
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -16,16 +14,9 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import 'swiper/css/effect-fade';
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { EffectCoverflow, EffectFade, Navigation } from 'swiper/modules';
+import { EffectFade, Navigation } from 'swiper/modules';
 
-{/* <DiretoriaCard title="Acadêmico" />
-<DiretoriaCard title="Marketing" />
-<DiretoriaCard title="Projetos" />
-<DiretoriaCard title="E-Sports" />
-<DiretoriaCard title="Comercial" />
-<DiretoriaCard title="Comercial" /> */}
-
-const DiretoriaCard = ({ title }: any) => (
+const DiretoriaCard = ({ title }: { title: string }) => (
   <div className="bg-blue-950 min-w-28 max-w-28 h-40 rounded-xl flex justify-center">
     <h6 className="font-bold text-white text-center self-end mb-4">{title}</h6>
   </div>
