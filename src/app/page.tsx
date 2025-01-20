@@ -9,6 +9,7 @@ import HomeSideButton from "@/components/homeSideButton";
 import QRcode from "@/components/qrcode";
 import Projetos from "@/components/projetos";
 import Footer from "@/components/footer";
+import Calendar from "@/components/calendar";
 
 
 export default function Home() {
@@ -47,11 +48,8 @@ export default function Home() {
 
         </div>
         <div className="col-span-1 flex flex-col items-center gap-8">
-          <div className="bg-blue-950 rounded-full size-12 flex justify-center items-center cursor-pointer text-white hover:bg-blue-900 duration-150 ">
-            <IoCalendarOutline size={32} />
-          </div>
+          <HomeSideButton icon={<IoCalendarOutline size={32} />} content={<Calendar />} />
           <HomeSideButton icon={<GiReceiveMoney size={32} />} content={<QRcode />} />
-
         </div>
       </div>
       <Footer />
