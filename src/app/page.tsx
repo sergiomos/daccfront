@@ -10,6 +10,7 @@ import QRcode from "@/components/qrcode";
 import Projetos from "@/components/projetos";
 import Footer from "@/components/footer";
 import Calendar from "@/components/calendar";
+import Link from "next/link";
 
 
 export default function Home() {
@@ -32,13 +33,13 @@ export default function Home() {
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis perferendis molestiae sint libero obcaecati dicta, perspiciatis quaerat ab ipsam quas sed cupiditate. Asperiores dolores harum sint iure. Suscipit, libero architecto!</p>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis perferendis molestiae sint libero obcaecati dicta, perspiciatis quaerat ab ipsam quas sed cupiditate. Asperiores dolores harum sint iure. Suscipit, libero architecto!</p>
             </div>
-            <span>Para saber mais <span className="font-bold">sobre</span> o diretório <span className="text-yellow-500 font-bold cursor-pointer">clique aqui</span> </span>
+            <span>Para saber mais <span className="font-bold">sobre</span> o diretório <Link href="/sobre" className="text-yellow-500 font-bold cursor-pointer">clique aqui</Link> </span>
           </div>
 
           <div className="text-center my-16 flex flex-col gap-5">
             <h4 className="font-bold text-lg">Projetos em andamento</h4>
 
-            <span>Para saber mais sobre esses e outros <span className="font-bold">projetos</span> ativos no diretório <span className="text-yellow-500 font-bold cursor-pointer">clique aqui</span> </span>
+            <span>Para saber mais sobre esses e outros <span className="font-bold">projetos</span> ativos no diretório <Link href="/sobre" className="text-yellow-500 font-bold cursor-pointer">clique aqui</Link> </span>
 
             {/* Substituindo a lista pelos projetos no carrossel */}
             <div className="mt-8">
